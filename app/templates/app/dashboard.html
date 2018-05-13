@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+  {% block content %}
+
+
+  <div class="container">
+<br>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Welcome to your Dashboard</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Manage your content here</h6>
+            <p class="card-text">
+              Upload and customise your 360 content and easily with our tools. If you need help visit the links below</p>
+            <a href="#" class="card-link">Get Started</a>
+            <a href="#" class="card-link">Tutorial</a>
+            <a href="#" class="card-link">Viewer</a>
+        </div>
+    </div>
+<br><br>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Simple Panorama</li>
+  </ol>
+</nav>
+
+  <div class="row">
+
+        {% for pa in pano %}
+<div class="col-md-3">
+<!-- Card -->
+<div class="card">
+
+  <!-- Card image -->
+  <div class="view overlay">
+    <img class="card-img-top" src="{{ pa.p.url }}" height="120px" alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h5 class="card-title">{{ pa.title }}</h5>
+    <hr>
+    <!-- Text -->
+    <p class="card-text">{{ pa.location }} | <a href="{% url 'view' key_id=pa.key %}">View</a> | <a href="">Share</a>
+</p>
+
+  </div>
+
+  <!-- Card footer -->
+  <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
+    <ul class="list-unstyled list-inline font-small">
+      <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/10/2015</li>
+      <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-share-alt"></i>12</a></li>
+      <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-chevron-right pl-1"> </i>21</a></li>
+      <li class="list-inline-item"><a href="#" class="white-text"><i class="fa fa-chevron-right pl-1"> </i>5</a></li>
+    </ul>
+  </div>
+
+</div>
+<!-- Card -->
+ </div>
+
+        {% endfor %}
+
+<div class="col-md-3">
+<div class="card" style="padding:40px">
+  <!-- Card image -->
+  <a href="{% url 'panorama' %}"><img class="card-img-top" src="{% static 'img/add2.png' %}" alt="Card image cap"></a>
+</div>
+</div>
+
+
+    </div>
+<br><br><br>
+<hr>
+    <br>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Virtual Tours</li>
+      </ol>
+    </nav>
+
+{{ tour }}
+<!-- {% for to in tour %}
+<p><a href="{% url 'scenes' id=to.id %}">{{ to.tour_title }}</a></p>
+<p>{{ to.tour_location }}</p>
+{% endfor %} -->
+<br><br>
+</div>
+
+{% endblock %}

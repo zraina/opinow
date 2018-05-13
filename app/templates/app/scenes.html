@@ -1,0 +1,22 @@
+{{ sc.tour_title }} <br>
+{{ sc.tour_location }} <br><br>
+
+{% for s in scen %}
+{{ s.scene_title }} <br>
+{{ s.scene_caption }} <br>
+<p><a href="{{ s.scene_url }}">{{ s.scene_url }}</a></p> <br>
+{{ s.tour }}
+{% endfor %}
+
+<br><br>
+<form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  Title<input type="text" name="title"><br>
+  Caption<input type="text" name="caption"><br>
+  File<input type="file" name="file"><br>
+  <input type="submit" value="Add Scene">
+</form>
+
+{% if uploaded_file_url %}
+<p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+{% endif %}

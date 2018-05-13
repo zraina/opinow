@@ -1,0 +1,489 @@
+
+  <!--==========================
+    Intro Section
+  ============================-->
+{% extends 'base.html' %}
+{% load staticfiles %}
+  {% block content %}
+  <section id="intro">
+
+    <div class="intro-content">
+      <h2> The future of <span>Immersive</span><br>Media</h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">Virtual Tour</a>
+        <a href="#portfolio" class="btn-projects scrollto">Get Started</a>
+      </div>
+    </div>
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('{% static 'img/intro-carousel/1.jpg' %}');"></div>
+      <div class="item" style="background-image: url('{% static 'img/intro-carousel/2.jpg' %}');"></div>
+      <div class="item" style="background-image: url('{% static 'img/intro-carousel/3.jpg' %}');"></div>
+      <div class="item" style="background-image: url('{% static 'img/intro-carousel/4.jpg' %}');"></div>
+      <div class="item" style="background-image: url('{% static 'img/intro-carousel/5.jpg' %}');"></div>
+    </div>
+
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="{% static 'img/about.jpg' %}" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>Create Stunning 360 VR tours within minutes</h2>
+            <h3>Take the viewing experience to the next level</h3>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Supports Gear VR, Daydream and Cardboard</li>
+              <li><i class="ion-android-checkmark-circle"></i> Intuitive to use and easy to integrate</li>
+              <li><i class="ion-android-checkmark-circle"></i> Share and experience anywhere</li>
+              <li><i class="ion-android-checkmark-circle"></i> Powerful tools for businesses </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Our all-in-one 2D and 3D solution is perfect for any industry that uses, modifies, communicates
+          about or markets real-world places. If you deal with properties Opinow is in your industry.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Travel and Hospitality</a></h4>
+              <p class="description">Create a Connection even before your guests arrive.
+              Give guests an immersive 3D walkthrough of your properties, amenities and event spaces.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><i class="fa fa-picture-o"></i></div>
+              <h4 class="title"><a href="">Residential Real Estate</a></h4>
+              <p class="description">Bring listings to life with immersive experiences that are more than virtual tours
+              and get every visual marketing asset you need automatically from a single shoot.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Schools and Public Spaces</a></h4>
+              <p class="description">3D virtual tours is an online experience for schools to offer their customers
+               a unique sense of difference and a total sense of home.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="">Engineering and Construction</a></h4>
+              <p class="description">All-in-One 3D scanning and reality capture. Streamline documentation,
+                3D models, 3D scan as-builts and collaborate
+              with ease.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Clients</h2>
+          <p>See who's already using us to drive more revenue, align guest expectations
+           and help alleviate the need to visit in person before making a decision.
+         Our customers report enhanced engagement and increased lead flow.</p>
+        </div>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="{% static 'img/clients/client-1.png' %}" alt="">
+          <img src="{% static 'img/clients/client-2.png' %}" alt="">
+          <img src="{% static 'img/clients/client-3.png' %}" alt="">
+          <img src="{% static 'img/clients/client-4.png' %}" alt="">
+          <img src="{% static 'img/clients/client-5.png' %}" alt="">
+          <img src="{% static 'img/clients/client-6.png' %}" alt="">
+          <img src="{% static 'img/clients/client-7.png' %}" alt="">
+          <img src="{% static 'img/clients/client-8.png' %}" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Our Portfolio Section
+    ============================-->
+    <section id="portfolio" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Virtual Tours</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/1.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/1.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 1</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/2.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/2.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 2</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/3.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/3.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 3</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/4.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/4.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 4</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/5.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/5.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 5</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/6.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/6.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 6</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/7.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/7.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 7</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="{% static 'img/portfolio/8.jpg' %}" class="portfolio-popup">
+                <img src="{% static 'img/portfolio/8.jpg' %}" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Tour 8</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>What are People Saying?</h2>
+          <p></p>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                Randomly one night, I saw a post on Opinow that caught my eye and I thought, Why not? And since then
+                I am forever grateful to that night. I love Opinow.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Collins Nnadozie</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                Easy to use, great service and a great way to provide an immersive experience. I only regret knowing about them recently.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Faith Obafemi</h3>
+              <h4>Designer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+               Everything was simple and organised well. They lead you through the whole process so
+               you have a very high likelihood of getting an experience that you love.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Faith Odun</h3>
+              <h4>Store Owner</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                The fantastic thing about Opinow is the experience. It provides a whole new world and perspective
+                to what we can offer our customers.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-4.jpg' %}" class="testimonial-img" alt="">
+              <h3>Matt Akin</h3>
+              <h4>Freelancer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="{% static 'img/quote-sign-left.png' %}" class="quote-sign-left" alt="">
+                Site users spend 3x more time engaging with property listings that offer the virtual tour feature. And this has helped in
+                increasing sales.
+                <img src="{% static 'img/quote-sign-right.png' %}" class="quote-sign-right" alt="">
+              </p>
+              <img src="{% static 'img/testimonial-5.jpg' %}" class="testimonial-img" alt="">
+              <h3>Damilola Ayinde</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Ready to get started?</h3>
+            <p class="cta-text">What we offer is more than 3D models or virtual tours. We offer a completely new form of
+            immersive 3D media that invites you to explore a place as if you were really there.
+          We create interactive 3D and VR experiences and print-ready 4k photography, all with an automated system that is incredibly easy to use.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Take a Virtual Tour</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+    <section id="team" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-1.jpg' %}" alt=""></div>
+              <div class="details">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-2.jpg' %}" alt=""></div>
+              <div class="details">
+                <h4>Sarah Jhinson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-3.jpg' %}" alt=""></div>
+              <div class="details">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'img/team-4.jpg' %}" alt=""></div>
+              <div class="details">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>We are ready to lead you into the future of media. Our customer support services are the best in the business,
+          with 99% customer satistifaction rating. They are standing to help you.</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+234 703 5208 624</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">hello@opinow.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+{% endblock %}
